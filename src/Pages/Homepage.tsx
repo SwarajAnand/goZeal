@@ -160,7 +160,7 @@ const HomePage: React.FC = () => {
               boxShadow: "4px 4px 8px rgba(109, 109, 216, 0.5)",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
-              width: "90%",
+              width: "100%",
               fontSize: "0.875rem",
             }}
           />
@@ -177,7 +177,7 @@ const HomePage: React.FC = () => {
               boxShadow: "4px 4px 8px rgba(72, 182, 72, 0.5)",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
-              width: "90%",
+              width: "100%",
               fontSize: "0.875rem",
             }}
           />
