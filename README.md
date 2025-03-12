@@ -1,5 +1,7 @@
 # Certificate Management App
 
+## Live Link - https://go-zeal.vercel.app/
+
 ## Overview
 This project is a certificate management system built using React Typescript and Redux. It allows users to upload, view, download, and delete their certifications, along with details such as the certification name and issuer.
 
