@@ -1,54 +1,83 @@
-# React + TypeScript + Vite
+# Certificate Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a certificate management system built using React Typescript and Redux. It allows users to upload, view, download, and delete their certifications, along with details such as the certification name and issuer.
 
-Currently, two official plugins are available:
+## Features
+- **Upload Certificates**: Users can upload up to 5 certification files (PDF, JPG, JPEG).
+- **Store Certification Details**: Each uploaded certificate includes the certification name, issuer, and file details.
+- **View Uploaded Certificates**: Users can see their uploaded certificates along with relevant details.
+- **Download Certificates**: Users can download any uploaded certificate.
+- **Delete Certificates**: Users can remove any uploaded certificate.
+- **Navigation**: Users can navigate between the upload and certificate list pages.
+- **View Certificates in New Tab**: Users can open and view uploaded certificates in a new browser tab.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend**: React, TypeScript, Redux, Tailwind CSS
+- **State Management**: Redux Toolkit
 
-## Expanding the ESLint configuration
+## Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SwarajAnand/goZeal.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Project Structure
+```
+├── src
+│   ├── assets
+│   ├── Components
+│   │   ├── Button.tsx
+│   │   ├── Input.tsx
+│   ├── Interfaces
+│   │   ├── Buttons.type.ts
+│   │   ├── Input.type.ts
+│   ├── Pages
+│   │   ├── HomePage.tsx
+│   │   ├── YourCertificates.tsx
+│   ├── Store
+│   │   ├── fileSlice.ts
+│   │   ├── Store.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+├── public
+│   ├── index.html
+├── package.json
+├── README.md
+├── .gitignore
+├── eslint.config.js
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vercel.json
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Usage
+- **Uploading a Certificate**: Enter the certification name, issuer, and select a file. Click "Save Certification".
+- **Viewing Certificates**: Click on "Your Certificates" to navigate to the certificates page.
+- **Downloading Certificates**: Click the download icon next to any certificate.
+- **Deleting Certificates**: Click the delete button next to any certificate to remove it.
+- **Viewing Certificates in New Tab**: Click the "View" button next to any certificate to open it in a new tab.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Future Enhancements
+- Add backend storage using Firebase or MongoDB.
+- Implement authentication for user-specific certificate storage.
+- Enhance UI/UX with animations and better design.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## License
+This project is open-source
+
+## Author
+Swaraj Anand  
+Email - Swrjnnd@gmail.com
+

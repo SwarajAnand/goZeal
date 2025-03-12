@@ -160,7 +160,7 @@ const HomePage: React.FC = () => {
               boxShadow: "4px 4px 8px rgba(109, 109, 216, 0.5)",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
-              width: "100%",
+              width: "10+0%",
               fontSize: "0.875rem",
             }}
           />
